@@ -8,11 +8,8 @@ jxRequirements:
       gitRef: master
       gitURL: https://github.com/jenkins-x/jx3-pipeline-catalog.git
   cluster:
-    chartRepository: http://bucketrepo/bucketrepo/charts
+    chartRepository: http://bucketrepo.jx/bucketrepo/charts
     clusterName: kind
-    devEnvApprovers:
-    - todo
-    environmentGitOwner: todo
     gitKind: github
     gitName: github
     gitServer: https://github.com
@@ -29,8 +26,6 @@ jxRequirements:
         enabled: false
         production: false
     key: dev
-    owner: jstrachan
-    repository: jx3-openshift-local
   - ingress:
       domain: ""
       externalDNS: false
@@ -59,8 +54,6 @@ jxRequirements:
       enabled: false
       production: false
   kaniko: true
-  pipelineUser:
-    username: jstrachan
   repository: bucketrepo
   secretStorage: local
   storage:

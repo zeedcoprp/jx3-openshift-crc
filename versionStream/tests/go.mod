@@ -5,8 +5,8 @@ go 1.13
 require (
 	github.com/jenkins-x/jx-api v0.0.20
 	github.com/jenkins-x/jx-secret v0.0.88
-	k8s.io/api v0.19.2
-	k8s.io/apimachinery v0.19.2
+	k8s.io/api v0.17.6
+	k8s.io/apimachinery v0.17.6
 )
 
 replace (
