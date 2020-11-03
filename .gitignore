@@ -13,3 +13,11 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+# IDE files
+.idea 
+
+# you could check these files in if you wanted to; but they are generally temporary files used
+# to generate the config-root directories
+build
+
