@@ -1,0 +1,69 @@
+jx:
+  imagePullSecrets: []
+  secrets:
+    adminUser:
+      password: todo
+      username: todo
+    hmacToken: todo
+    pipelineUser:
+      email: jenkins-x@googlegroups.com
+      token: todo
+      username: jenkins-x-labs-bot
+jxRequirements:
+  autoUpdate:
+    enabled: false
+    schedule: ""
+  cluster:
+    chartRepository: http://bucketrepo.jx/bucketrepo/charts
+    clusterName: kind
+    gitKind: github
+    gitName: github
+    gitServer: https://github.com
+    provider: openshift
+    registry: ghcr.io
+  environments:
+  - ingress:
+      domain: ""
+      externalDNS: false
+      namespaceSubDomain: ""
+      tls:
+        email: ""
+        enabled: false
+        production: false
+    key: dev
+  - ingress:
+      domain: ""
+      externalDNS: false
+      namespaceSubDomain: ""
+      tls:
+        email: ""
+        enabled: false
+        production: false
+    key: staging
+  - ingress:
+      domain: ""
+      externalDNS: false
+      namespaceSubDomain: ""
+      tls:
+        email: ""
+        enabled: false
+        production: false
+    key: production
+  ingress:
+    domain: apps-crc.testing
+    externalDNS: false
+    namespaceSubDomain: -jx.
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  repository: bucketrepo
+  secretStorage: local
+  vault: {}
+  webhook: lighthouse
+jxRequirementsIngressExternalDNS:
+  enabled: false
+jxRequirementsIngressTLS:
+  enabled: false
+jxRequirementsVault:
+  enabled: false
