@@ -56,6 +56,7 @@ jxRequirements:
   ingress:
     domain: apps-crc.testing
     externalDNS: false
+    kind: ingress
     namespaceSubDomain: -jx.
     tls:
       email: ""
